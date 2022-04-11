@@ -1,9 +1,9 @@
-#!/bin/zsh
+#!/bin/sh
 
 echo "Generating certificates for use with CircleCI, press enter to continue"
 read check1
-openssl genrsa -des3 -passout pass:x -out server.pass.key 2048
-openssl rsa -passin pass:x -in server.pass.key -out server.key
+openssl genrsa -des3 -passout pass:gsahdg  -out server.pass.key 2048
+openssl rsa -passin pass:gsahdg x -in server.pass.key -out server.key
 rm server.pass.key
 echo "We will now generate the server key, when promoted for a password, press enter"
 echo "press enter to continue"
